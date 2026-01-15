@@ -1,0 +1,85 @@
+header{
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid $white-color;
+  box-sizing: border-box;
+}
+.div-header{
+  margin: 0 auto;
+  max-width: 1130px;
+  gap: 320px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+.logo-li{
+  width: 36px;
+  height: 36px;
+  padding: 0px;
+}
+.logo-b{
+  width: 36px;
+  height: 36px;
+  padding: 7px 13px;
+  background-color: $black-color;
+  border-radius: 16px;
+  align-items: center;
+}
+.p-logo{
+  @include text("Roboto", normal, 16px, 24px, normal, $white-color, $txt-decor:none, $txt-align:left);
+}
+.motives{
+  width: 210px;
+  @include text("Roboto", normal, 12px, 16px, normal, $gray-text, $txt-decor:none, $txt-align:left);}
+.blogpost-ul{
+  max-width: 258px;
+  max-height: 44px;
+  gap: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.header-div{
+  display: flex;
+  flex-direction: column;
+}
+.serch-ul{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+#serch-post{
+  width: 410px;
+  height: 42px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 2px solid $gray-color;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  @include text("Roboto", normal, 16px, 24px, normal, $gray-text, $txt-decor: none, $txt-align: start);
+}
+#serch-post:focus{
+  outline: solid $black-color 2px;
+  @include text("Roboto", normal, 16px, 24px, normal, $gray-text, $txt-decor: none, $txt-align: start);}
+.new-b{
+  width: 93px;
+  height: 56px;
+  padding: 8px 16px;
+  border: block;
+  background-color: $black-color;
+  border-radius: 16px;
+  @include text("Roboto", 500, 14px, 20px, normal, $white-color, $txt-decor: none, $txt-align: center);
+}
+.site-name{
+  @include text("Roboto", 600, 18px, 28px, normal, $black-color, $txt-decor:none, $txt-align:left);
+}

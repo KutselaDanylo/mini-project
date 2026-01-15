@@ -1,0 +1,20 @@
+@import "./utilitys/vars","./utilitys/mixins","./components/main","./components/header","./components/footer","./components/popup","./components/coment", "./components/edit-overlay";
+// @include text($font-f, $font-w, $font-s, $line-h, $lett-s, $color, $txt-decor:none, $txt-align:left);
+li{
+  list-style: none;
+}
+.main-div{
+  max-width: 1152px;
+  display: block;
+  margin: 0 auto;
+  padding: 16px;
+}
+p{
+  margin: 0px;
+}
+ul{
+  padding-inline-start: 0px;
+  margin-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}

@@ -1,0 +1,166 @@
+.amount-found-on-site{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+.amount-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 789px;
+  margin: 0px 0px 12px 0px;
+  height: 25px;
+}
+ #found-p{
+   @include text("Roboto", normal, 14px, 20px, normal, $gray-text, $txt-decor: none, $txt-align: left);
+ }
+ #amount-p{
+    @include text("Roboto", normal, 14px, 20px, normal, $gray-text, $txt-decor: none, $txt-align: left);
+ }
+.ul-numb{
+    align-items: right;
+}
+.lable-numb{
+  @include text("Roboto", normal, 14px, 20px, normal, $gray-text, $txt-decor: none, $txt-align: left);
+}
+#select-numb{
+  border-radius: 16px;
+  padding: 8px 12px;
+  max-width: 62px;
+  border: solid 1px;
+  border-color: $gray-color;
+}
+.demo-blocks{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 0; 
+  list-style: none;
+}
+#demo-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  padding: 0;
+  list-style: none;
+}
+.demo-posts{
+  width: 365px;
+  padding: 16px;
+  border: 1px solid $white-color;
+  border-radius: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.numb-date{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.demo-number{
+  width: 170px;
+  padding-inline-start: 0px;
+  margin-inline-start: 0px;
+@include text("Roboto", 600, 16px, 20px, normal,$black-color, $txt-decor:none, $txt-align:left);
+}
+.date{
+  padding: 4px 8px;
+@include text("Roboto", normal, 11px, 16.5px, normal, #6F6F6F, $txt-decor:none, $txt-align:left);
+}
+.ul-buttons{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+}
+ .content{
+  @include text("Roboto", normal, 14px, 20px, normal, $gray-text, $txt-decor: none, $txt-align: left);
+
+ }
+.ul-hashtags{
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+ .hashtags{
+  padding: 4px 8px;
+  @include text("Roboto", normal, 11px, 16.5px, normal, $gray-text, $txt-decor: none, $txt-align: left);
+ }
+
+.ul-buttons{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.first-li{
+  max-width: 116px;
+}
+.view-btn{
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+  @include text("Roboto", 500, 14px, 20px, normal, $black-color, $txt-decor: none, $txt-align: center);
+}
+.second-li{
+  max-width: 104px;
+}
+.edit-btn{
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+  @include text("Roboto", 500, 14px, 20px, normal, $black-color, $txt-decor: none, $txt-align: center);
+}
+.third-li{
+  max-width: 95px;
+}
+.delete-btn{
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+  background-color: $red-color;
+  @include text("Roboto", 500, 14px, 20px, normal, $white-color, $txt-decor: none, $txt-align: center);
+}
+.pagination{
+  margin-top:20px;
+  display:flex;
+  gap:5px;
+  align-items:center;
+}
+#pagination{
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px 0px 0px;
+}
+#prev-page{
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+  @include text("Roboto", 500, 14px, 20px, normal, $black-color, $txt-decor: none, $txt-align: center);
+}
+#next-page{
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  @include text("Roboto", 500, 14px, 20px, normal, $black-color, $txt-decor: none, $txt-align: center);
+}
+#pages button {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  @include text("Roboto", 400, 14px, 20px, normal, $black-color, none, center);
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &.active-page {
+    background-color: $black-color;
+    color: white;
+  }
+}

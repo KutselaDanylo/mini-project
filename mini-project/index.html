@@ -2,19 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <link rel="stylesheet" href="./SASS/style.css">
+    <title>Blog Posts</title>
 </head>
 <body>
-    <head>
+    <header>
+        <div class="div-header">
+            <ul class="blogpost-ul">
+                <li class="logo-li"><div class="logo-b"><p class="p-logo">B</p></div></li>
+                <div class="header-div">
+                    <li><p class="site-name">Blog Posts</p></li>
+                    <li><p class="motives">Пошук • Пагінація • CRUD • Коментарі</p></li>
+                </div>
+            </ul>
+            <ul class="serch-ul">
+                <li>
+                    <label for="text">
+                        <input type="text" name="" id="serch-post" placeholder="Пошук постів...">
+                    </label>
+                </li>
+                <li><button class="new-b">Новий пост</button></li>
+            </ul>
+        </div>
+    </header>
+<main>
+    <div class="main-div">
+        <div class="amount-div">
+            <ul class="amount-found-on-site">
+                <li><p id="found-p"></p></li>
+                <li><p id="amount-p"></p></li>
+            </ul>
+            <ul class="ul-numb">
+                <li class="li-numb">
+                    <label for="number" class="lable-numb">На сторінку</label>
+                    <select id="select-numb" name="number">
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <ul id="demo-container" class="demo-blocks">
+        </ul>
+        <div id="pagination">
+            <button id="prev-page">← Назад</button>
+            <span id="pages"></span>
+            <button id="next-page">Вперед →</button>
+        </div>
+        <div id="details-menu"></div>
+    </div>
+</main>
+<footer>
+    <div>
+        <p class="copyright">&copy; 2025 Demo • Побудовано як дизайн-прототип з REST/AJAX</p>
+    </div>
 
-    </head>
-    <main>
-        <h1>hello world</h1>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="project.js" type="module"></script>
+         <div id="popup">
+            <div id="popup-content">
+                <div class="close-div">
+                  <h2 class="newp-h2">Новий пост</h2>
+                  <button id="close-popup">X</button>
+                </div>
+                <ul>
+                    <li>
+                        <label class="text-lable">Заголовок</label><br>
+                        <input type="text" id="post-title"><br><br>
+                    </li>
+                    <li>
+                        <label  class="text-lable">Текст</label><br>
+                        <textarea id="post-text"></textarea><br><br>
+                    </li>
+                    <li>
+                        <label  class="text-lable">Теги (через кому)</label><br>
+                        <input type="text" id="post-tags" placeholder="ui, design, api"><br><br>
+                    </li>
+                </ul>
+                <div class="buttons-div">
+                    <button id="cancel-popup">Скасувати</button>
+                    <button id="create-post">Створити</button>
+                </div>
+            </div>
+        </div>
+</footer>
+<script src="project.js" type="module"></script>
 </body>
 </html>

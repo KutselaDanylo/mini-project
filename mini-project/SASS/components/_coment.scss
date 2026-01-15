@@ -1,0 +1,112 @@
+.div-coments{
+  height: 100%;
+  max-width: 576px;
+  position: absolute;
+  left: 70%;
+  background-color: white;
+  padding: 16px;
+}
+.background-tinn{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  z-index: 9999;
+}
+.details{
+  max-width: 576px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 360px;
+}
+#close-details{
+  width: 29px;
+  padding: 8px;
+  border: none;
+  @include text("Roboto", 400, 16px, 24px, normal, $black-color, none, center);
+}
+#details-post{
+  min-width: 150px;
+  @include text("Roboto", 700, 24px, 24px, normal,$black-color, none, left);
+}
+.ul-post-content{
+  width: 575px;
+  padding: 0px 16px;
+}
+#post-content{
+  max-width: 544px;
+  border: solid 1px;
+  border-radius: 16px;
+  padding: 16px;
+  border-color: $white-color;
+}
+.ul-coments{
+  max-width: 544px;
+  padding: 16px;
+}
+#comments-section{
+  width: 543px;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: $white-color;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.comment-item{
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: $white-color;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.name-coment{
+  margin: 0px;
+  @include text("Roboto", 600, 14px, 20px, normal, $black-color, none, left);
+}
+.coment{
+  margin: 4px 0px 4px 0px;
+  @include text("Roboto", 400, 14px, 20px, normal, $gray-text, none, left);
+}
+.date-coment{
+  @include text("Roboto", 400, 11px, 16.5px, normal, $gray-text, none, left);
+
+}
+#add-comment{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+#s{
+  width: 160px;
+  padding: 8px 16px;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: $smal-gray-text;
+  @include text("Roboto", 400, 16px, 18.4px, normal, $gray-text, none, start);
+}
+#comment-text{
+  width: 253px;
+  padding: 16px 16px 0px 16px;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: $smal-gray-text;
+  @include text("Roboto", 400, 16px, 18.4px, normal, $gray-text, none, left);
+}
+#comment-name{
+  width: 253px;
+  padding: 8px 16px;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: $smal-gray-text;
+  @include text("Roboto", 400, 16px, 18.4px, normal, $gray-text, none, left);
+}
+#add-comment-btn{
+  width: 80px;
+  border-radius: 16px;
+  background-color: $black-color;
+  @include text("Roboto", 500, 14px, 20px, normal, $white-color, none, center);
+}
